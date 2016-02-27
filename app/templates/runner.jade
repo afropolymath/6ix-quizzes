@@ -1,0 +1,41 @@
+{% load staticfiles %}
+doctype html
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 6ix Quizzes Runner
+    link(rel='stylesheet', href="{% static 'webapp/lib/flxgrid/dist/css/flexgrid.min.css' %}")
+    link(rel='stylesheet', href="{% static 'webapp/lib/semantic/dist/semantic.min.css' %}")
+    link(rel='stylesheet', href="{% static 'dist/css/runner.css' %}")
+
+  body
+    nav
+      .ui.padded.grid
+        .ui.grid.container
+          .row
+            .sixteen.wide.column
+              .ui.stackable.secondary.menu
+                .item
+                  .logo
+                    img.ui.image(src="{% static 'webapp/img/logo.png' %}")
+                .item
+                  .ui.huge.header.light HTML 5 Test
+                .right.menu
+                  a.item About 6ix
+    .ui.padded.grid
+      .ui.grid.container
+        .row
+          .twelve.wide.column
+            .ui.header.top.attached Question 1
+            .ui.segment.attached.very.padded
+              .ui.header.large.light Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+          .four.wide.column
+            .ui.segment.very.padded
+              .ui.header.large Hello
+    {% verbatim %}
+    #app {{{ message }}}
+    {% endverbatim %}
+    script(src="{% static 'webapp/lib/vue/dist/vue.min.js' %}")
+    script(src="{% static 'webapp/js/runner.js' %}")

@@ -73,7 +73,3 @@ assets/
 
 # Node Modules
 node_modules/
-
-# Uncompiled Assets
-app/static/webapp/css/
-app/static/webapp/views/

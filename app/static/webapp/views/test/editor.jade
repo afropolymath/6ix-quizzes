@@ -1,0 +1,50 @@
+header.ui.grid
+  .ui.grid.container.flex
+    .flex.fill
+      .qu-breadcrumb
+        a.qu-item(ui-sref="dashboard.home")
+          i.chevron.left.icon.spaced
+          | Test Dashboard
+        a.qu-item-divider
+        a.qu-item
+          i.write.icon.spaced
+          | Test Editor
+main
+  .ui.grid
+    .ui.grid.container
+      .row
+        .four.wide.column
+          .ui.vertical.pointing.menu
+            a.active.item
+              | Test Settings
+            a.item
+              | Questions
+        .twelve.wide.column
+          button.ui.primary.right.floated.button
+            i.plus.icon
+            | Add Question
+          h2.ui.medium.header.inpage Test Questions
+          .ui.floating.message
+            p This test has a total of 
+              strong 3 
+              | questions
+          table.ui.selectable.table.padded
+            thead
+              tr
+                th.twelve.wide Question
+                th 
+            tbody
+              tr(ng-repeat="i in [1,2,3]")
+                td
+                  | Question Details
+                  a.ui.red.label.left-space Draft
+                td(align="right")
+                  .ui.icon.right.floated.buttons
+                    a.ui.button(href="#")
+                      i.chevron.up.icon
+                    a.ui.button(href="#")
+                      i.chevron.down.icon
+                    a.ui.button(href="#")
+                      i.pencil.icon
+                    a.ui.button(href="#")
+                      i.delete.icon

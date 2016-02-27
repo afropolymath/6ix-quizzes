@@ -1,0 +1,29 @@
+body {
+  background: #EDF1F5;
+}
+
+.logo {
+  padding-right: 30px;
+  border-right: dotted 1px #0073BF;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.main-test-container {
+  background: #fff;
+  padding: 40px;
+  margin: 20px auto;
+}
+
+.ui.header.light {
+  font-weight: 100;
+}

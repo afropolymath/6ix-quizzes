@@ -1,0 +1,22 @@
+.ui.grid
+  .ui.grid.container
+    .row
+      .four.wide.column
+        .ui.vertical.pointing.menu
+          a.active.item
+            | Profile
+          a.item
+            | Account Settings
+          a.item
+            | Notification Settings
+
+      .twelve.wide.column
+        h2.ui.medium.header.inpage Profile
+        form.ui.form
+          .field
+            label First Name
+            input(type='text', name='first-name', placeholder='First Name')
+          .field
+            label Last Name
+            input(type='text', name='last-name', placeholder='Last Name')
+          // button.ui.button(type='submit') Submit

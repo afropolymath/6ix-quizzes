@@ -1,0 +1,51 @@
+.ui.grid
+  .ui.grid.container
+    .row
+      .sixteen.wide.column
+        button.ui.right.floated.primary.button
+          i.icon.plus
+          | Create a new tests
+        .ui.floating.dropdown.labeled.icon.button
+          i.filter.icon
+          span.text Filter Tests
+          .menu
+            .ui.icon.search.input
+              i.search.icon
+              input(type='text', placeholder='Search tags...')
+            .divider
+            .header
+              i.tags.icon
+              | Tag Label
+            .scrolling.menu
+              .item(data-value='important')
+                .ui.red.empty.circular.label
+                | Important
+              .item(data-value='announcement')
+                .ui.blue.empty.circular.label
+                | Announcement
+              .item(data-value='cannotfix')
+                .ui.black.empty.circular.label
+                | Cannot Fix
+              .item(data-value='news')
+                .ui.purple.empty.circular.label
+                | News
+
+    .row
+      .sixteen.wide.column
+        .ui.three.stackable.link.cards(ng-hide="true")
+          .ui.card(ng-repeat="i in [1,2,3,4]")
+            .image.test-image
+            .content
+              .header HTML 5 Test
+              .meta 2 days ago
+              .description
+                p No description added.
+            .extra.content
+              i.check.icon
+              | 121 have completed this test
+        .ui.info.icon.floating.message
+          i.inbox.icon
+          .content
+            .header
+              | You haven't created any tests recently?
+            p You can start creating tests and sharing them with the world

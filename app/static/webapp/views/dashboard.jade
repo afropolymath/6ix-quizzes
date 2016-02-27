@@ -1,0 +1,14 @@
+header.ui.grid
+  .ui.grid.container
+    .qu-menu
+      a.qu-menu-item(ui-sref="dashboard.home" ui-sref-active="active")
+        i.cubes.icon.spaced
+        | Test Dashboard
+      a.qu-menu-item(ui-sref="dashboard.activity" ui-sref-active="active")
+        i.feed.icon.spaced
+        | Activity
+      a.qu-menu-item(ui-sref="dashboard.settings" ui-sref-active="active")
+        i.setting.icon.spaced
+        | Settings
+main
+  div(ui-view='')

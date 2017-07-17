@@ -1,0 +1,7 @@
+Django==1.9.2
+djangorestframework==3.3.2
+djangorestframework-jwt==1.8.0
+pyjade==4.0.0
+PyJWT==1.4.0
+six==1.10.0
+wheel==0.24.0
